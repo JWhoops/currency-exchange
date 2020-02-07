@@ -14,7 +14,8 @@ public class MainActivity extends AppCompatActivity {
     public void clickFunction(View view) {
         EditText et = (EditText) findViewById(R.id.myText);
         // Toast.makeText(MainActivity.this, et.getText().toString(), Toast.LENGTH_LONG).show();
-        goToActivity2(et.getText().toString());
+        double num = Double.valueOf(et.getText().toString());
+        goToActivity2(String.valueOf(num * 0.77));
     }
 
     public void goToActivity2(String s) {
